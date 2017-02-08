@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.0.1)
+  - ObjectMapper (2.0.0)
+  - PKHUD (3.2.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0.0)
+  - ObjectMapper (~> 2.0.0)
+  - PKHUD (from `https://github.com/toyship/PKHUD.git`)
+
+EXTERNAL SOURCES:
+  PKHUD:
+    :git: https://github.com/toyship/PKHUD.git
+
+CHECKOUT OPTIONS:
+  PKHUD:
+    :commit: 28fb970b41d63134e962f9da766b96670c0f55f0
+    :git: https://github.com/toyship/PKHUD.git
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
+  PKHUD: 001c11518f125a273ddf026bcc64918423744ea2
+
+PODFILE CHECKSUM: d7ed6f79f2937b18d54363f01ad4ebb5b908b6b1
+
+COCOAPODS: 1.1.1

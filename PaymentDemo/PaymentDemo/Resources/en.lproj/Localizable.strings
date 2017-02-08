@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  PaymentDemo
+
+  Created by Evgeniy Leychenko on 06.02.17.
+  Copyright © 2017 theappsolutions.com. All rights reserved.
+*/
+
+// Buttons
+
+"button.add" = "Add";
+"button.ok" = "Ok";
+"button.yes" = "Yes";
+"button.no" = "No";
+
+// Alerts
+
+"alert.error.title" = "Error";
+"alert.delete_card.message" = "Do you want to delete this card?";
+
+// Products List
+
+"products_list.payment.unavailable" = "Not Paid";

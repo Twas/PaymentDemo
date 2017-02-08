@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddProductViewController" customModule="PaymentDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="y64-IF-yoC" id="9fz-zF-0JG"/>
+                <outlet property="amountField" destination="lTf-js-Tcv" id="T55-AE-gYs"/>
+                <outlet property="descriptionField" destination="7ru-Bz-JQA" id="mmW-oP-wOF"/>
+                <outlet property="titleField" destination="lqS-4x-Hlt" id="UcI-bp-cbH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqS-4x-Hlt">
+                    <rect key="frame" x="14" y="40" width="347" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="VIG-tJ-rvx"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ru-Bz-JQA">
+                    <rect key="frame" x="14" y="110" width="347" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="LKN-cF-WY7"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTf-js-Tcv">
+                    <rect key="frame" x="14" y="180" width="347" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="YHe-lq-6TF"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y64-IF-yoC">
+                    <rect key="frame" x="14" y="593" width="347" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="r8j-cf-DpF"/>
+                    </constraints>
+                    <state key="normal" title="Add">
+                        <color key="titleColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addAction:" destination="-1" eventType="touchUpInside" id="AlR-5S-Ngm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lqS-4x-Hlt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="1hj-Rg-yRM"/>
+                <constraint firstAttribute="trailing" secondItem="lqS-4x-Hlt" secondAttribute="trailing" constant="14" id="AYP-f1-FvO"/>
+                <constraint firstItem="lTf-js-Tcv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="CvJ-fc-VAS"/>
+                <constraint firstItem="lqS-4x-Hlt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="HGk-HC-8zd"/>
+                <constraint firstAttribute="trailing" secondItem="7ru-Bz-JQA" secondAttribute="trailing" constant="14" id="JV3-fB-Ryk"/>
+                <constraint firstAttribute="bottom" secondItem="y64-IF-yoC" secondAttribute="bottom" constant="30" id="MeB-ZQ-gBM"/>
+                <constraint firstItem="lTf-js-Tcv" firstAttribute="top" secondItem="7ru-Bz-JQA" secondAttribute="bottom" constant="40" id="Np4-A9-HWz"/>
+                <constraint firstItem="7ru-Bz-JQA" firstAttribute="top" secondItem="lqS-4x-Hlt" secondAttribute="bottom" constant="40" id="S5i-wT-Zpo"/>
+                <constraint firstAttribute="trailing" secondItem="lTf-js-Tcv" secondAttribute="trailing" constant="14" id="maw-zm-raQ"/>
+                <constraint firstAttribute="trailing" secondItem="y64-IF-yoC" secondAttribute="trailing" constant="14" id="oOA-oi-dyx"/>
+                <constraint firstItem="y64-IF-yoC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="paO-NZ-yaP"/>
+                <constraint firstItem="7ru-Bz-JQA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="zh5-Ec-fI7"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
